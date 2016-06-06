@@ -1,0 +1,6 @@
+# compiled output
+/public
+
+# dependencies
+/node_modules
+/bower_components

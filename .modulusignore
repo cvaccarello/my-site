@@ -1,0 +1,8 @@
+# ignore git repo information
+/.git
+
+# ember project which will be compiled to "public" thus is not necessary
+/ember
+
+# dependencies
+/node_modules
