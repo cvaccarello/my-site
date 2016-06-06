@@ -1,0 +1,39 @@
+<div class="history-bar-timeline">
+	{{#each model as |organization index|}}
+		<div class="row">
+			<div
+				class="history-bar-organization columns five {{if (mod index 2) 'offset-by-seven'}}"
+				data-250-center-top="{{if (mod index 2) 'right' 'left'}}: -80px; opacity: 0;"
+				data--50-center-top="{{if (mod index 2) 'right' 'left'}}: 0px; opacity: 1;"
+				data-date-from="{{organization.date.from}}"
+				data-date-to="{{organization.date.to}}"
+			>
+				{{#h-type tagName=h1 classNames="org-date t-fsize-smaller"}}{{organization.date.to}} - {{organization.date.from}}{{/h-type}}
+				{{#h-type tagName=h2 classNames="org-name t-shadow"}}{{organization.name}}{{/h-type}}
+				{{#h-type tagName=h3 classNames="org-title t-shadow"}}{{organization.title}}{{/h-type}}
+				<hr/>
+				<ul>
+					{{#each organization.accomplishments as |accomplishment|}}
+						<li>{{accomplishment}}</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+	{{/each}}
+
+	<div class="history-bar-line">
+		<table class="history-bar-markers">
+			<tbody>
+				{{#each dates as |date|}}
+					<tr>
+						<td>
+							<div class="history-bar-marker" data-date="{{date}}"><i>{{date}}</i></div>
+							{{#if (eq date dates.lastObject)}}<div class="history-bar-marker history-bar-marker-last" data-date="{{sub date 1}}"><i>{{sub date 1}}</i></div>{{/if}}
+						</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+		<div class="history-bar-fill" data-center-top="height: 0%;" data-_vh-center-top="height: 100%;"><div class="history-bar-indicator"></div></div>
+	</div>
+</div>

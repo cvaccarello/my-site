@@ -1,0 +1,44 @@
+// namespace: 'rchart'
+
+// modifier for a group of responsive charts
+.rchart-container {
+	@extend .u-justify;
+	width: 100%;
+	margin: auto;
+
+	@include breakpoint($bp-l) {
+		width: 90%;
+	}
+
+	@include breakpoint($bp-xl) {
+		width: 80%;
+	}
+
+	.rchart-box {
+		@extend .u-justify-inline-block;
+		padding-bottom: 20px;
+
+		&:last-child {
+			padding: 0;
+		}
+
+		// override .u-inline-block so that stacking happens at larger resolutions
+		@include breakpoint($bp-s) {
+			display: block;
+		}
+
+		@include breakpoint($bp-l) {
+			display: inline-block;
+		}
+
+		@include breakpoint($bp-xl) {
+			padding: 0 10px;
+		}
+	}
+
+	.rchart-label {
+		font-size: 1.8rem;
+		font-weight: normal;
+		text-align: center;
+	}
+}
