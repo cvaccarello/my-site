@@ -11,3 +11,8 @@
 	margin-bottom: map-get($margins, 'normal');
 	display: block;
 }
+
+// modifier: 'transparent'
+.image-gallery-thumbnail-transparent {
+	background-color: transparent;
+}
