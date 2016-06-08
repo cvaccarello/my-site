@@ -7,6 +7,7 @@ var port = process.env.PORT || 3000;
 
 // set the static files location
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/projects'));
 
 require('./app/routes')(app); // configure our routes
 
