@@ -3,36 +3,22 @@
 // modifier for a group of responsive charts
 .rchart-container {
 	@extend .u-justify;
-	width: 100%;
-	margin: auto;
-
-	@include breakpoint($bp-l) {
-		width: 90%;
-	}
+	text-align: center;
 
 	@include breakpoint($bp-xl) {
-		width: 80%;
+		text-align: justify;
 	}
 
 	.rchart-box {
 		@extend .u-justify-inline-block;
-		padding-bottom: 20px;
+		padding: 20px 40px 0 40px;
 
 		&:last-child {
 			padding: 0;
 		}
 
-		// override .u-inline-block so that stacking happens at larger resolutions
-		@include breakpoint($bp-s) {
-			display: block;
-		}
-
-		@include breakpoint($bp-l) {
-			display: inline-block;
-		}
-
 		@include breakpoint($bp-xl) {
-			padding: 0 10px;
+			padding: 20px 10px 0 10px;
 		}
 	}
 

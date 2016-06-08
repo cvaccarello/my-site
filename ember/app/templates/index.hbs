@@ -29,21 +29,22 @@
 		<div class="container">
 			<h2 class="hp-title t-fsize-smaller">My Skills</h2>
 			<p>The following is a list of what I feel are my strongest skills, rating from 1-10, where 10 is my best skill.  This does not represent my knowledge in that skill, as there's always more to learn as technology grows.  Additionally I have excluded anything that I previously worked with that was more than 10 years ago (e.g., PHP).</p>
-		</div>
-		<div class="rchart-container">
-			<div class="hp-chart-languages rchart-box">
-				<label class="rchart-label">Languages</label>
-				{{ember-chart type='Radar' data=model.my_skills.[0] options=model.my_skills.[0].options width=260 height=260}}
+
+			<div class="rchart-container">
+				<div class="hp-chart-languages rchart-box">
+					<label class="rchart-label">Languages</label>
+					{{ember-chart type='Radar' data=model.my_skills.[0] options=model.my_skills.[0].options width=260 height=260}}
+				</div>
+				<div class="hp-chart-frameworks rchart-box">
+					<label class="rchart-label">Frameworks / Engines</label>
+					{{ember-chart type='Radar' data=model.my_skills.[1] options=model.my_skills.[1].options width=260 height=260}}
+				</div>
+				<div class="hp-chart-tools rchart-box">
+					<label class="rchart-label">Tools</label>
+					{{ember-chart type='Radar' data=model.my_skills.[2] options=model.my_skills.[2].options width=260 height=260}}
+				</div>
+				<div class="rchart-box"><!-- used to justify above inline-block elements --></div>
 			</div>
-			<div class="hp-chart-frameworks rchart-box">
-				<label class="rchart-label">Frameworks / Engines</label>
-				{{ember-chart type='Radar' data=model.my_skills.[1] options=model.my_skills.[1].options width=260 height=260}}
-			</div>
-			<div class="hp-chart-tools rchart-box">
-				<label class="rchart-label">Tools</label>
-				{{ember-chart type='Radar' data=model.my_skills.[2] options=model.my_skills.[2].options width=260 height=260}}
-			</div>
-			<div class="rchart-box"><!-- used to justify above inline-block elements --></div>
 		</div>
 	</section>
 
