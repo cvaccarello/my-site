@@ -43,10 +43,17 @@
 	}
 
 
+	.hp-planet {
+		position: absolute;
+		opacity: 0.6;
+
+		@include breakpoint($bp-s) {
+			opacity: 1;
+		}
+	}
 
 	.hp-planet-001 {
 		$planet001-size: 264px;
-		position: absolute;
 		top: 200px; right: 5%;
 		margin-right: -140px;
 		background: transparent url('/images/planets/planet001.png') 0 0 no-repeat;
@@ -68,9 +75,8 @@
 
 	.hp-planet-003 {
 		$planet003-size: 325px;
-		position: absolute;
-		top: 1200px; left: 18%;
-		margin-left: -100px;
+		bottom: 500px; left: 10%;
+		margin-left: 0px;
 		background: transparent url('/images/planets/planet003.png') 0 0 no-repeat;
 		width: $planet003-size; height: $planet003-size;
 	}

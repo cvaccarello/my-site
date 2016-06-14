@@ -413,15 +413,6 @@
          result="composite2"
          id="feComposite7048-34" />
     </filter>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath7250">
-      <path
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 405,462.3622 0,260 315,0 0,-260 -315,0 z m 170.20312,10.20312 A 109.79745,109.79745 0 0 1 685,582.3622 109.79745,109.79745 0 0 1 575.20312,692.16103 109.79745,109.79745 0 0 1 465.4043,582.3622 109.79745,109.79745 0 0 1 575.20312,472.56532 Z"
-         id="path7252"
-         inkscape:connector-curvature="0" />
-    </clipPath>
     <filter
        style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
@@ -464,6 +455,15 @@
          cy="517.88062"
          r="139.58911" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4247">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4249"
+         d="m 427.84817,461.77716 -6.64171,259.27729 288.92446,0 6.6417,-259.27729 -288.92445,0 z m 155.85314,10.17477 A 100.49936,109.72008 9.2367471 0 1 681.6045,581.44361 100.49936,109.72008 9.2367471 0 1 578.09172,690.93723 100.49936,109.72008 9.2367471 0 1 480.18681,581.44361 100.49936,109.72008 9.2367471 0 1 583.70131,471.95193 Z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.91276872;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -473,10 +473,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3"
-     inkscape:cx="453.3177"
-     inkscape:cy="426.6141"
+     inkscape:cx="399.3177"
+     inkscape:cy="430.4436"
      inkscape:document-units="px"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer7"
      showgrid="true"
      inkscape:snap-intersection-paths="false"
      inkscape:object-paths="false"
@@ -608,7 +608,7 @@
        r="109.79745"
        cy="592.36218"
        cx="554.79742"
-       clip-path="url(#clipPath7250)"
+       clip-path="url(#clipPath4247)"
        transform="matrix(1.2327518,0,0,1.2327518,-238.32912,-106.39506)" />
   </g>
   <g
