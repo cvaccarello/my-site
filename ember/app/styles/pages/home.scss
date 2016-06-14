@@ -45,21 +45,34 @@
 
 
 	.hp-planet-001 {
+		$planet001-size: 264px;
 		position: absolute;
-		top: 140px; right: 5%;
+		top: 200px; right: 5%;
 		margin-right: -140px;
 		background: transparent url('/images/planets/planet001.png') 0 0 no-repeat;
-		width: 264px; height: 264px;
-		opacity: 0.8;
+		width: $planet001-size; height: $planet001-size;
 	}
 
 	.hp-planet-002 {
+		@extend .hp-planet-001;
+		background: none;
+
+		.hp-moon {
+			$planet002-size: 78px;
+			position: absolute;
+			top: -($planet002-size / 2); right: -($planet002-size / 2);
+			background: transparent url('/images/planets/planet002.png') 0 0 no-repeat;
+			width: $planet002-size; height: $planet002-size;
+		}
+	}
+
+	.hp-planet-003 {
+		$planet003-size: 325px;
 		position: absolute;
-		top: 200px; right: 5%;
-		margin-right: 120px;
-		background: transparent url('/images/planets/planet002.png') 0 0 no-repeat;
-		width: 78px; height: 78px;
-		opacity: 0.8;
+		top: 1200px; left: 18%;
+		margin-left: -100px;
+		background: transparent url('/images/planets/planet003.png') 0 0 no-repeat;
+		width: $planet003-size; height: $planet003-size;
 	}
 
 	.hp-planet-earth {

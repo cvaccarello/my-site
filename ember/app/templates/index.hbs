@@ -58,8 +58,14 @@
 		</div>
 
 		<div class="parallax-container-inner">
-			<div class="hp-planet-001" data-bottom-top="margin-top: 500px;" data-top-bottom="margin-top: -150px;"></div>
-			<div class="hp-planet-002" data-bottom-top="margin-top: 800px;" data-top-bottom="margin-top: -200px;"></div>
+			<div class="hp-planet-001" data--400-bottom-top="margin-top: 250px;" data--100-top-bottom="margin-top: 50px;"></div>
+
+			<!-- "invisible" planet that mirrors planet-001 so that the moon can move properly with the parallax skrollr plugin -->
+			<div class="hp-planet-002" data--400-bottom-top="margin-top: 250px; transform: rotate(360deg);" data--100-top-bottom="margin-top: 50px; transform: rotate(100deg);">
+				<div class="hp-moon"></div>
+			</div>
+
+			<div class="hp-planet-003" data--400-bottom-top="margin-top: 200px;" data-top-bottom="margin-top: 0px;"></div>
 		</div>
 
 		<div class="container">
