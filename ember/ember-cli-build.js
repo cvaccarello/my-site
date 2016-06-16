@@ -36,5 +36,7 @@ module.exports = function(defaults) {
 		development: 'bower_components/skrollr/src/skrollr.js'
 	});
 
+	app.import('vendor/ParticleSystem.js');
+
 	return app.toTree();
 };
