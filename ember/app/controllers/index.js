@@ -37,7 +37,6 @@ export default Ember.Controller.extend({
 
 				var ship_pos_on_screen = offset.top - scroll;
 				if (scroll > scroll_amt && ship_pos_on_screen <= screen.height && ship_pos_on_screen >= 0 - height) {
-					console.log('ignite engines!');
 					MyParticleEmitter.trigger(30);
 				}
 

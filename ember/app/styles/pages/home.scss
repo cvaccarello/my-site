@@ -75,7 +75,7 @@
 
 	.hp-planet-003 {
 		$planet003-size: 325px;
-		bottom: 700px; left: 8%;
+		bottom: 600px; left: 8%;
 		margin-left: -30px;
 		background: transparent url('/images/planets/planet003.png') 0 0 no-repeat;
 		width: $planet003-size; height: $planet003-size;
@@ -118,14 +118,14 @@
 	}
 
 	.hp-ship-001 {
-		bottom: 900px; left: 5%;
+		bottom: 1000px; left: 5%;
 		margin-left: -100px;
 		background: transparent url('/images/ships/ship001.png') 0 0 no-repeat;
 		width: 148px; height: 257px;
 
 		.hp-engine {
 			position: absolute;
-			bottom: 30px; left: 50%;
+			bottom: 50px; left: 50%;
 		}
 	}
 
