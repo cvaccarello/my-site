@@ -123,5 +123,20 @@ export default Ember.Route.extend({
 			my_skills,
 			my_history
 		};
+	},
+
+	actions: {
+		willTransition(transition) {
+			this.controller.send('remove');
+		}
+	},
+
+	setupController: function(controller, model){
+		this._super(controller, model);
+
+		// setup particle system emitter every time this route is rendered
+		Ember.run.scheduleOnce('afterRender', this, function () {
+			controller.send('rendered');
+		});
 	}
 });

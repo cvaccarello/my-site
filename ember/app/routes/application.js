@@ -42,7 +42,7 @@ var s = skrollr.init({
 });
 
 Ember.Route.reopen({
-	setupController: function(controller, model){
+	setupController: function(controller, model) {
 		this._super(controller, model);
 
 		// refresh skrollr plugin every time a route is rendered
