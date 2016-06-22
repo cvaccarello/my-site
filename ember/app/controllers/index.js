@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
 			var height = $ship.outerHeight();
 
 			var MyParticleEmitter = Ember.ParticleSystem.addEmitter({
-				id: 'foo',
+				id: 'ship-engine--stars',
 				max_particles: 100,
 				emit_delay: 10,
 				element: $ship.find('.hp-engine'),
